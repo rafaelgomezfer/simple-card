@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*   background-color: #666; */
+  font-family: fantasy;
+  background: #DA4453;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.card {
+  position: relative;
+  width: 330px;
+  height: 412px;
+  background-color: #eee;
+  border-radius: 18px;
+  transition: 0.5s ease-out;
+}
+
+.card .image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card .image img {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 90%;
+    display: block;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    transition: .5s;
+}
+
+.card .content {    
+    position: absolute;
+    left: 0;
+    bottom: 0;    
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    transition: .5s cubic-bezier(.22, .68, 0, 1.71);
+    overflow: hidden;
+    padding: 12px;
+    background: #eee;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+h1 {
+    font-size: 17px;
+    text-align: center;
+}
+
+.card:hover .content {
+    width: 100%;
+    height: 65%;
+    left:0;
+    bottom: 0;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+a {
+    color: #89216B;
+    font-size: 13px;
+    text-decoration: none;
+    border:none;
+    background: #E5E5E5;
+    border-radius: 18px;
+    padding: 7px;
+    
+}
